@@ -1,0 +1,52 @@
+/* From Uiverse.io by akshat-patel28 */ 
+.whole {
+  padding: 20px;
+  display: flex; /* Use Flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.button-container {
+  display: flex;
+  background: linear-gradient(#4a4a4a,#222222);
+  width: 50%;
+  height: 60px;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+        rgba(245, 73, 144, 0.5) 5px 10px 15px;
+}
+
+.button {
+  outline: 0 !important;
+  border: 0 !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+  transition: scale 0.25s ease-in, opacity 0.25s ease-in, filter 0.25s ease-in;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  background-color: white;
+  color: #c67700;
+  scale: 1.2;
+  filter: drop-shadow(1px 1px 20px #fcff9e);
+}
+
+.icon {
+  font-size: 20px;
+}
+.button:has(.button:hover) .button:not(:hover){
+  scale: 0.8;
+  opacity: 0.8;
+  filter: blur(10px);
+}

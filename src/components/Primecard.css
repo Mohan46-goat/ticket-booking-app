@@ -1,0 +1,27 @@
+:root {
+    /* --glow-color: rgba(255, 20, 147, 0.6); */
+    --glow-color: rgb(8, 8, 8);
+  }
+  
+  .card {
+    position: relative;
+    border-radius: 0.45rem;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 0 20px var(--glow-color), 0 0 30px var(--glow-color);
+    filter: drop-shadow(1px 1px 20px #222222); 
+  }
+  .change:hover{
+    transform: translateX(-2px);
+    border-radius: 10px;
+    box-shadow: #fcff9e 0px 5px 15px,
+    #c67700(170, 158, 163, 0.5) 5px 10px 15px;
+          
+  
+  }
+  body{
+    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+  }
